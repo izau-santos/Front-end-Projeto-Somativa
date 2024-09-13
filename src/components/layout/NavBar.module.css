@@ -1,0 +1,34 @@
+    /* CONTAINER DO MENU*/
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        background-color: #230303;
+        width:100%;
+        
+    }
+
+    /* REGRAS DA LISTA DE LINKS*/
+    .list{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* REGRAS DOS LINKS*/
+    .item{
+        margin:0 10px;
+        color: #fff;
+        font-size:large;
+        padding: 10px 20px;
+        
+    }
+    .item:hover{
+        color: red;
+        font-size: x-large;
+    }
+
+    .logo{
+        width: 100px;
+        margin-top: 15px;
+    }

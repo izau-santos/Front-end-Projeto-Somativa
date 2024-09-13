@@ -1,0 +1,84 @@
+.home_container{
+    display: flex;
+    overflow-x: auto;
+    /* Adiciona rolagem horizontal */
+    gap: 10px;
+    /* Espaçamento entre as imagens */
+    padding: 20px;
+    scroll-behavior: smooth;
+    /* Suaviza a rolagem */
+}
+
+.container {
+    width: 100%; /* Ocupa 100% da largura da tela */
+    padding: 20px; /* Espaçamento ao redor do conteúdo */
+    background-color: #343434; /* Cor de fundo da div container */
+    overflow: hidden; /* Garante que a rolagem fique apenas horizontal */
+    border-radius: 1%;
+}
+
+.home_container img {
+    height: 250px;
+    width: auto;
+    /* Altura fixa para todas as imagens */
+    /* Impede que as imagens encolham */
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.home_container img:hover {
+    transform: scale(1.1);
+    /* Efeito de zoom ao passar o mouse */
+}
+
+.home_container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+}
+
+.home_container h1 {
+    font-size: 2.5em;
+    margin-bottom: .5em;
+}
+
+.home_container h1 span {
+    color: #5254f2;
+    padding: .2em;
+    background-color: #222;
+}
+
+.home_container p {
+    margin-bottom: 1.5em;
+    color: #7B7B7B;
+    font-size: large;
+}
+
+.home_container img {
+    width: 500px;
+    margin: 0;
+
+}
+
+.img_home {
+    height: 10px;
+}
+
+.titulos h1 {
+    align-items: center;
+    margin-left: 450px;
+}
+
+.titulos p {
+    align-items: center;
+    margin-left: 480px;
+}
+
+.titulos span {
+    background-color: rgb(215, 6, 6);
+    color: rgb(151, 150, 148);
+    border-radius: 10%;
+}
