@@ -1,22 +1,25 @@
 import styles from './Select.module.css'
 
-function Select ({type, name}){
-    return(
+function Select({ type, name, options, handlerChangeGenero }) {
+    return (
         <div className={styles.form_control}>
             <label htmlFor={name}>{name}</label>
-            <select name={name}>{name}
-                <option>Selecione uma categoria</option>
-                <option>Ficção cientifica</option>
-                <option>Ação/Aventura</option>
-                <option>Suspense</option>
-                <option>Terror</option>
-                <option>Romance</option>
-                <option>Drama</option>
+            <select name={name} onChange={handlerChangeGenero}>{name}
+
+                <option>Selecione um Genero</option>
+
+                {
+                    options.map((option) => {
+                        // console.log(option.cod_genero + ' - ' + option.nome_genero)   
+                        return <option value={option.cod_genero}>{option.nome_genero}</option>                                      
+                    })
+                }
+    
             </select>
-            
+
         </div>
     )
 
 }
 
-export default Select
+export default Select;
