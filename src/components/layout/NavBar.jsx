@@ -22,7 +22,7 @@ const NavBar = () => {
                     </Link>
 
                     <Link to='/favoritos'>
-                        <li className={style.item}>FILME/SERIE FAVORITOS</li>
+                        <li className={style.item}>FILME/SERIE SOLICITADO</li>
                     </Link>
                 </ul>
             </nav >

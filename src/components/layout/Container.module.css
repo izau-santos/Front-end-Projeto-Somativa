@@ -1,10 +1,18 @@
-.container{
-    width:1200px;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    margin:0 auto;
-    flex-wrap:wrap;
+.container {
+    display: flex;
+    flex-direction: column; /* Alinha os filhos em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #ffffff; /* Fundo branco */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    border-radius: 8px; /* Bordas arredondadas */
+    min-height: 100vh; /* Altura mínima para preencher a tela */
+    margin: 0 auto; /* Centraliza o container na página */
 }
 
-
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Reduz o espaçamento em telas menores */
+    }
+}
