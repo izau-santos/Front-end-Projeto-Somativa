@@ -1,10 +1,10 @@
 import styles from './Select.module.css'
 
-function Select({ type, name, options, handlerChangeGenero }) {
+function Select({ type, name, options, handlerChangeGenero, value }) {
     return (
         <div className={styles.form_control}>
             <label htmlFor={name}>{name}</label>
-            <select name={name} onChange={handlerChangeGenero}>{name}
+            <select name={name} onChange={handlerChangeGenero} value={value} >{name}
 
                 <option>Selecione um Genero</option>
 

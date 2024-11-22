@@ -27,6 +27,7 @@ const DetailFilme = () => {
                 },
             })
                 .then((resp) => {
+                    console.log(resp)
                     if (!resp.ok) {
                         throw new Error('Erro ao buscar o filme');
                     }
@@ -43,13 +44,7 @@ const DetailFilme = () => {
         }
     }, [cod_filme]);
 
-    if (error) {
-        return <div>Erro ao carregar os detalhes do filme.</div>;
-    }
 
-    if (!movie) {
-        return <div>Carregando...</div>;
-    }
 
     return (
         <div className={style.grid}>
@@ -63,8 +58,8 @@ const DetailFilme = () => {
                 <span className={style.descricao}>Descrição: {movie.descricao_Filme}</span>
 
                 <div className={style.container_buttons}>
-                    <Button label='EDITAR' />
-                    <Button label='EXCLUIR' />
+                    <Button label='EDITAR' router='/UpdateFilme/' cod_filme={cod_filme}/>
+                    <Button label='EXCLUIR'  />
                 </div>
             </div>
         </div>
