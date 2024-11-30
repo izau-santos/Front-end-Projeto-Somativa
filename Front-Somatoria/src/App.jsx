@@ -7,6 +7,7 @@ import Solicitate from './components/pages/Solicitate'
 import Favoritos from './components/pages/Favoritos'
 import DetailFilme from './components/pages/DetailFilme'
 import UpdateFilmes from './components/pages/UpdateFilme'
+import DeleteFilme from './components/pages/DeleteFilme'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
               <Route path='/favoritos' element={<Favoritos />} />
               <Route path='/detailfilme/:cod_filme' element={<DetailFilme />} />
               <Route path="/updatefilme/:cod_filme" element={<UpdateFilmes/>}/>
+              <Route path="/deletefilme/:cod_filme" element={<DeleteFilme />} />
             </Route>
           </Routes>
         </Container>

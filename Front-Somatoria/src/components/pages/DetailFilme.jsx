@@ -59,7 +59,7 @@ const DetailFilme = () => {
 
                 <div className={style.container_buttons}>
                     <Button label='EDITAR' router='/UpdateFilme/' cod_filme={cod_filme}/>
-                    <Button label='EXCLUIR'  />
+                    <Button label='EXCLUIR' router='/DeleteFilme/' cod_filme={cod_filme} />
                 </div>
             </div>
         </div>
